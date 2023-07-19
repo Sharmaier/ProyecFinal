@@ -1,8 +1,11 @@
-const path = require("path");
-const fs = require ("fs");
+const info = require("../data/objetivos.json")
 
 //
 const mainController = {
+    
+    objetivos: (req, res) => {
+        res.json(info)
+    },
     listado: (req, res) => {
         res.send ("Lista de canciones con sus propiedades");
     },
