@@ -1,4 +1,7 @@
 const info = require("../data/objetivos.json")
+const db = require("../database/models")
+sequelize = db.sequelize
+Sequelize = db.Sequelize
 
 //
 const mainController = {
@@ -7,8 +10,11 @@ const mainController = {
         res.json(info)
     },
     listado: (req, res) => {
-        res.send ("Lista de canciones con sus propiedades");
-    },
+        db.Canciones.findAll()
+        .then(canciones => {
+            res.send(canciones)
+        })
+       },
     crear: (req, res) => {
         res.send ("Crear nuevo registro de una cancion");
     },
