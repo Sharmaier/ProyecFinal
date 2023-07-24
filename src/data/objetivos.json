@@ -1,9 +1,10 @@
 [
     {"id": 0,
-    "objetivos1":"/canciones (GET) que muestre un listado de las canciones con sus propiedades",
+    "objetivosCumplido1":"/canciones (GET) que muestre un listado de las canciones con sus propiedades",
     "objetivos2":"/canciones (POST) para crear un nuevo registro de una canción",
-    "objetivos3":"/canciones/:id (GET) que muestre una canción",
-    "objetivos4":"/canciones/:id (PUT) para editar una canción /canciones/:id (DELETE) para eliminar una canción",
-    "objetivos5":"/generos (GET) listado de todos los géneros con sus canciones"
+    "objetivosCumplido3":"/canciones/:id (GET) que muestre una canción",
+    "objetivos4":"/canciones/:id (PUT) para editar una canción", 
+    "objetivos5":"/canciones/:id (DELETE) para eliminar una canción",
+    "objetivoCumplido5":"/generos (GET) listado de todos los géneros con sus canciones"
     }
 ]

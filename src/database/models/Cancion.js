@@ -30,5 +30,19 @@ module.exports = (sequelize, dataTypes) => {
     };
 
     const Cancion = sequelize.define(alias, cols, config);
+    Cancion.associate = (modelos) => {
+        Cancion.belongsTo(modelos.Generos, {
+            as: "genero",
+            foreignKey: "genero_id"
+        })
+        /*Cancion.belongsToMany(modelos.Artistas, {
+            as: "artistas",
+            foreignKey: "artista_id"
+        })
+        Cancion.belongsTo(modelos.Albumes, {
+            as: "albumes",
+            foreignKey: "album_id"
+        })*/
+    }
     return Cancion;
 }

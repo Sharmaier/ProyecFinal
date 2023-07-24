@@ -8,6 +8,8 @@ router.get("/", mainController.objetivos);
 router.get("/canciones", mainController.listado);
 router.post("/canciones", mainController.crear);
 router.get("/canciones/:idCancion", mainController.cancion);
+router.put("/canciones/:idCancion", mainController.editar);
+router.delete("/canciones/:idCancion", mainController.eliminar);
 router.get("/generos", mainController.generos);
 
 //
